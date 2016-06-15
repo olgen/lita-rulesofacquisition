@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-rulesofacquisition"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.3"
   spec.authors       = ["Shaun Martin"]
   spec.email         = ["shaun@samsite.ca"]
   spec.description   = "Displays one of the Ferengi Rules of Acquisition"
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "lita", ">= 4.4"
+  spec.add_runtime_dependency "lita"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "pry-byebug"

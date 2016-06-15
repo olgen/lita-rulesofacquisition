@@ -14,10 +14,14 @@ Add lita-rulesofacquisition to your Lita instance's Gemfile:
 gem "lita-rulesofacquisition"
 ```
 
-## Configuration
-
-TODO: Describe any configuration attributes the plugin exposes.
-
 ## Usage
 
-TODO: Describe the plugin's features and how to use them.
+Lita will automatically respond to the following words:
+* ferengi rule
+* latinum
+* greed
+* money
+* profit
+* sale
+* discount
+* opportunity
