@@ -4,7 +4,6 @@ module Lita
       route(
         /ferengi rule|latinum|greed|money|profit|sale|discount|opportunity/,
         :rule,
-        command: true,
         help: {
           "ferengi rule|latinum|greed|money|profit|sale|discount|opportunity" => "Returns a Ferengi Rule of Acquisition"
         }
