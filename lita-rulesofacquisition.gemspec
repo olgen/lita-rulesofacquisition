@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-rulesofacquisition"
-  spec.version       = "0.1.3"
+  spec.version       = "0.1.5"
   spec.authors       = ["Shaun Martin"]
   spec.email         = ["shaun@samsite.ca"]
   spec.description   = "Displays one of the Ferengi Rules of Acquisition"
