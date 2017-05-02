@@ -96,15 +96,12 @@ module Lita
         ]
 
         input = response.matches.flatten.first
-        rules.each do |rule|
-          if rule.downcase.include?(input.downcase)
-            response.reply(rule)
-            return
-          end
+        matching_rules = rules.select do |rule|
+          rule.downcase.include?(input.downcase)
         end
-        
-        # if we didn't match anything
-        response.reply(rules[Random.rand(rules.length)])
+
+        selected_rule = matching_rules.sample || rules.sample
+        response.reply(selected_rule)
       end
     end
 
