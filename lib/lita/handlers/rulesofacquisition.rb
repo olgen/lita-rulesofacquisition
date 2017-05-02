@@ -95,6 +95,15 @@ module Lita
           "Ferengi Rule of Acquisition #285:\n> No good deed ever goes unpunished.\n> -- Star Trek: Deep Space 9, \"The Collaborator\""
         ]
 
+        input = response.matches.flatten.first
+        rules.each do |rule|
+          if rule.downcase.include?(input.downcase)
+            response.reply(rule)
+            return
+          end
+        end
+        
+        # if we didn't match anything
         response.reply(rules[Random.rand(rules.length)])
       end
     end
